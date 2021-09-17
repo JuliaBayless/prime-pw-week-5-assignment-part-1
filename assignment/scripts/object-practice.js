@@ -9,11 +9,11 @@ console.log('***** Object Practice *****')
   - Also give it an array 'favThreeFoods'
 */
 const me = { // TODO - add properties here
-  firstName : 'Julia',
-  lastName : 'Bayless',
-  hasSiblings : true,
-  shoeCount : 30,
-  favThreeFoods : ['sushi', 'tacos', 'curry']
+  firstName: 'Julia',
+  lastName: 'Bayless',
+  hasSiblings: true,
+  shoeCount: 30,
+  favThreeFoods: ['sushi', 'tacos', 'curry']
 };
 console.log('A little about me:', me);
 
@@ -42,10 +42,13 @@ console.log('My third favorite food is',me.favThreeFoods[2]);
 */
 console.log('My current shoe count is', me.shoeCount);
 console.log('I just got a new pair of shoes!!');
-
+me.shoeCount = 31; 
+console.log('My new shoe count is', me.shoeCount);
 /* 5. Add a new property to an existing object.
   - Add a 'favoriteColor' to your existing object
   - Do this the same way you updated the variable above
   - Cool huh? It works, even though it wasn't there before
   - Console.log your object
 */
+me.favoriteColor = 'pink';
+console.log(me);
